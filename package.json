@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.5",
     "express": "^4.17.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "nodemon --exec babel-node index.js"
   },
   "author": "",
   "license": "ISC"
